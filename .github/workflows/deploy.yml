@@ -27,9 +27,9 @@ jobs:
     - name: Deploy on EC2
       uses: appleboy/ssh-action@v0.1.7
       with:
-        host: ${{ secrets.EC2_IP }}
+        host: ${{ secrets.EC2_IP1 }}
         username: ubuntu
-        key: ${{ secrets.EC2_SSH_KEY }}
+        key: ${{ secrets.EC2_SSH_KEY1 }}
         script: |
           sudo apt update -y
           sudo apt install apache2 -y
